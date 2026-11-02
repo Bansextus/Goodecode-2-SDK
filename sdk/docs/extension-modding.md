@@ -35,6 +35,15 @@ A screen project does **not** require forking/rebuilding the extension. Fork the
 
 Clone the public [Goodecode repository](https://github.com/Bansextus/Goodecode) and open its extension root in VS Code. Use the branch/release containing these beta SDK files; older public releases do not contain them. In the larger Goodebot developer checkout, this root is `02-goodecode-extension/`.
 
+For the beta extension sources:
+
+```sh
+git clone --branch codex/goodecode-2-beta https://github.com/Bansextus/Goodecode.git
+cd Goodecode
+```
+
+The checkout retains the stable base manifest; use `scripts/build-beta.js` below to create the separate beta extension identity.
+
 Install Node, npm, Python 3, and VS Code. Native desktop preview also needs Clang; on macOS this is available with Xcode Command Line Tools. TypeScript examples require Node **22.18 or newer** for native type stripping.
 
 ```sh
